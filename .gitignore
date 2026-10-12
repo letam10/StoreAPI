@@ -1,0 +1,11 @@
+.vs/
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+**/.env
+**/.env.local
+**/data/
+**/work/
+*.log
+*.csproj.user

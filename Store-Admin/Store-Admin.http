@@ -1,0 +1,14 @@
+@Store_Admin_HostAddress = http://127.0.0.1:3010
+
+GET {{Store_Admin_HostAddress}}/api/health
+Accept: application/json
+
+###
+
+GET {{Store_Admin_HostAddress}}/host/health
+Accept: application/json
+
+###
+
+GET {{Store_Admin_HostAddress}}/api/storefront/catalog
+Accept: application/json

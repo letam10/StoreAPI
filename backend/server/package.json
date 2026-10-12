@@ -1,0 +1,30 @@
+{
+  "name": "store-local-api",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "engines": {
+    "node": "24.19.0",
+    "npm": "11.17.0"
+  },
+  "packageManager": "npm@11.17.0",
+  "scripts": {
+    "dev": "node src/visual-studio.js",
+    "start": "node src/visual-studio.js",
+    "create-admin": "node scripts/create-admin.js",
+    "update-admin": "node scripts/update-admin.js",
+    "import:demo-products": "node scripts/import-demo-products.js",
+    "import:extra-products": "node scripts/import-extra-products.js",
+    "import:1000-products": "node scripts/import-1000-products.js",
+    "import:more-products": "node scripts/import-more-products.js",
+    "migrate:postgres": "node scripts/migrate-sqlite-to-postgres.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "express": "^5.1.0",
+    "pg": "^8.23.0",
+    "qrcode": "1.5.4",
+    "@electric-sql/pglite": "^0.5.8"
+  }
+}
